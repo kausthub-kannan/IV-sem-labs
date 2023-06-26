@@ -1,45 +1,4 @@
 import java.util.*;
-
-public class LineChartWithCategoryDatasetExample extends JFrame {
- 
-    public LineChartWithCategoryDatasetExample() {
-        super("Line Chart Example with JFreechart");
- 
-        JPanel chartPanel = createChartPanel();
-        add(chartPanel, BorderLayout.CENTER);
- 
-        setSize(640, 480);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-    }
- 
-    private JPanel createChartPanel() {
-        String chartTitle = "Programming Languages Trends";
-        String categoryAxisLabel = "Interest over time";
-        String valueAxisLabel = "Popularity";
-
-        CategoryDataset dataset = createDataset();
-
-        JFreeChart chart = ChartFactory.createLineChart(chartTitle, categoryAxisLabel, valueAxisLabel, dataset);
-        return new ChartPanel(chart);
-    }
- 
-    private CategoryDataset createDataset() {
-        // creates chart dataset...
-        // returns the dataset
-    }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run(){
-                new LineChartWithCategoryDatasetExample().setVisible(true);
-            }
-        });
-    }
-
-}
- 
 class Search{
 
     public static int [] randomTester(int max, int min, int min_count, int max_count){ 
