@@ -1,1 +1,1 @@
-# dbms-basics
+# Database Management Systems (DBMS) - Oracle SQL
