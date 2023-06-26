@@ -2,7 +2,8 @@
 
 ## Design and Analysis of Algorithms (DAA) - JAVA
 <ol>
-  <li>Search Algorithms : Linear and Binary Search</li>
+  <li>Search Algorithms: Linear and Binary Search</li>
+  <li>Merge Sort</li>
 </ol>
 
 
