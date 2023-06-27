@@ -4,6 +4,7 @@
 <ol>
   <li>Search Algorithms: Linear and Binary Search</li>
   <li>Merge Sort</li>
+  <li>Selection Sort</li>
 </ol>
 
 
