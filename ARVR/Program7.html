@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple A-Frame Scene</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+
+    <a-assets>
+      <a-asset-item id="tree" src="./models/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <a-entity position="0 1.6 0">
+      <a-camera></a-camera>
+    </a-entity>
+
+    <a-entity gltf-model="#tree" position="0 2 -7" rotation="0 45 0" scale="2 2 2">
+    </a-entity>
+
+    <a-box position="0 2 1" rotation="0 45 0" color="#4CC3D9"></a-box>
+
+  </a-scene>
+</body>
+</html>
+
+
+<!-- const express = require('express');
+const path = require('path');
+const app = express();
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+console.log(`Server is running on http://localhost:${PORT}`);
+}); -->

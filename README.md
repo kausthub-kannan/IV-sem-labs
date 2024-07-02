@@ -1,13 +1,4 @@
-# IV Semester Lab
+# VI SEM LAB
 
-## Design and Analysis of Algorithms (DAA) - JAVA
-<ol>
-  <li>Search Algorithms: Linear and Binary Search</li>
-  <li>Merge Sort</li>
-  <li>Selection Sort</li>
-  <li>Insertion Sort</li>
-</ol>
-
-
-## Database Management Systems (DBMS) - Oracle SQL
-## Basics of Python Programming
+- ARVR Lab
+- OS Lab

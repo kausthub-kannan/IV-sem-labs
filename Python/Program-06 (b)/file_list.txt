@@ -1,3 +1,0 @@
-C:\Users\CSDLAB\Desktop\python\Program-6 (a).py\execution.py
-C:\Users\CSDLAB\Desktop\python\Program-6 (a).py\input.txt
-C:\Users\CSDLAB\Desktop\python\Program-6 (a).py\output.txt
