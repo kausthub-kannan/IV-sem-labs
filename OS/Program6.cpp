@@ -2,7 +2,7 @@
 #include<stdio.h>
 #define max 25
 
-void main() {
+int main() {
     int frag[max], b[max], f[max], i, j, nb, nf, temp;
     static int bf[max], ff[max];
 
@@ -37,14 +37,15 @@ void main() {
     printf("\nFile_no  File_size  Block_no  Block_size  Fragmentation");
     for(i = 1; i <= nf; i++)
         printf("\n%d\t\t\t%d\t\t\t%d\t\t\t%d\t\t\t%d", i, f[i], ff[i], b[ff[i]], frag[i]);
+        
+    return 0;
 }
 
 // BEST FIT
 #include<stdio.h>
-
 #define max 25
 
-void main() {
+int main() {
     int frag[max], b[max], f[max], i, j, nb, nf, temp, lowest = 10000;
     static int bf[max], ff[max];
 
@@ -81,14 +82,15 @@ void main() {
     printf("\nFile No\tFile Size \tBlock No\tBlock Size\tFragment");
     for(i = 1; i <= nf && ff[i] != 0; i++)
         printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d", i, f[i], ff[i], b[ff[i]], frag[i]);
+        
+    return 0;
 }
 
 // FIRST FIT
 #include<stdio.h>
-
 #define max 25
 
-void main() {
+int main() {
     int frag[max], b[max], f[max], i, j, nb, nf, temp, highest = 0;
     static int bf[max], ff[max];
 
@@ -126,4 +128,6 @@ void main() {
     printf("\nFile_no:\tFile_size :\tBlock_no:\tBlock_size:\tFragment");
     for(i = 1; i <= nf; i++)
         printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d", i, f[i], ff[i], b[ff[i]], frag[i]);
+        
+    return 0;
 }

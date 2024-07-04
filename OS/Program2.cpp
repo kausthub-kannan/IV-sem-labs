@@ -1,7 +1,7 @@
 // FCFS
 #include<stdio.h>
 
-void main() {
+int main() {
     int bt[20], wt[20], tat[20], i, n;
     float wtavg, tatavg;
 
@@ -26,10 +26,12 @@ void main() {
     printf("\t PROCESS \tBURST TIME \t WAITING TIME\t TURNAROUND TIME\n");
 
     for(i = 0; i < n; i++)
-        printf("\n\t P%d \t\t %d \t\t %d \t\t %d", i, bt[i], wt[i], tat[i]);
+        printf("\n\t\t P%d \t\t %d \t\t\t %d \t\t\t\t\t %d", i, bt[i], wt[i], tat[i]);
 
     printf("\nAverage Waiting Time -- %f", wtavg / n);
     printf("\nAverage Turnaround Time -- %f", tatavg / n);
+    
+    return 0;
 }
 
 // SJF

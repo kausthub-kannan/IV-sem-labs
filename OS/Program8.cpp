@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void main() {
+int main() {
     int f[50], p, i, st, len, j, c, k, a;
 
     for(i = 0; i < 50; i++)
@@ -19,6 +19,7 @@ void main() {
     scanf("%d%d", &st, &len);
     k = len;
 
+x:
     if(f[st] == 0) {
         for(j = st; j < (st + k); j++) {
             if(f[j] == 0) {
@@ -39,4 +40,6 @@ void main() {
         goto x;
     else
         exit(0);
+
+    return 0;
 }
